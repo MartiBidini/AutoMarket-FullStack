@@ -1,0 +1,845 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(241, 241, 241);
+    font-family: 'Poppins', sans-serif;
+}
+/*Header*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 5px 40px;
+    background-color: rgb(15, 15, 15);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index:1000;
+    padding-right: 220px;
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+}
+.nav_item a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav_item a:hover{
+    color: grey;
+}
+.item_boton{
+    color: rgb(240, 233, 233);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgb(61, 60, 60);
+    border-radius: 7px;
+    font-weight: bold;
+    box-shadow: 0 0 1px white;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+.item_boton:hover{
+    background-color: rgb(83, 82, 82);
+    box-shadow: 0 0 2px white;
+}
+.nav_logo img{
+    width: 145px;
+    display:block;
+    }
+.nav{
+    display: flex;
+    justify-content:center;
+    flex:1 ;
+}
+
+/*Main banner*/
+
+.hero{
+    position: relative;
+    margin-top: 108px;
+    width: 100%;
+    height: 350px;
+    scroll-margin-top: 150px;
+}
+.hero .overplay_hero{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.836);
+    width: 100%;
+    height:100%;
+    top: 0;
+}
+.hero img.banner{
+    width: 100%;
+    height: 100%;
+}
+.hero_content{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top:23%;
+    left: 22%;
+}
+.hero_title{
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 30px rgb(0, 0, 0);
+}
+.hero_lorem{
+    font-size:20px;
+    margin-bottom: 30px;
+}
+.boton_hero{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px;
+    background-color: rgb(156, 152, 152);
+    border-radius: 10px;
+    font-family:'Poppins', sans-serif;
+    transition: 0.6s;
+}
+.boton_hero:hover {
+    background-color: rgb(191, 188, 188);
+    box-shadow: 0 0 3px 0 rgb(234, 232, 232);
+    cursor: pointer;
+}
+
+/*Main Barra de busqueda*/
+
+.main_title{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.input_buscador{
+    margin-left: 395px;
+    width:37%;
+    padding: 10px 10px 10px 40px;
+    font-size: 17px;
+    background-color: rgb(232, 225, 225);
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 25px;
+}
+.barra_busqueda{
+    position: relative;
+    margin: auto;
+}
+.icon{
+    position: absolute;
+    top: 17.5%;
+    left: 27%;
+    color: #6e6e6e;
+    cursor: pointer;
+    pointer-events: auto; 
+    z-index: 10; 
+}
+
+/*Aside izquierda*/
+
+.aside_opciones{
+    width: 250px; 
+    min-width: 250px; 
+}
+.text_ordenar{
+    margin-left: 1px;
+    margin-bottom: 5px;
+}
+.jajant{
+    margin-bottom: 300px;
+    margin-top: 100px;
+}
+.select_1{
+    padding: 9px 80px 9px 10px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(241, 241, 241);
+    border:  solid 1px rgb(123, 121, 121);
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.h3_marcas{
+    margin-left: 3px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.filtrar label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    width: 100%;
+    white-space: nowrap;
+}
+.ver_todo{
+    cursor: pointer;
+    width: 130px;
+}
+.filtrar input[type="radio"] {
+    margin-right: 8px;
+    accent-color: black;
+    }
+    .title_precio{
+        margin-top: 15px;
+        margin-bottom:5px;
+    }
+    
+.precio-item {
+    position: relative; 
+    margin-bottom: 10px; 
+    width: 100%;
+}
+
+
+.input_precio {
+    width: 100%;
+    padding: 10px 30px 10px 10px; 
+    border-radius: 7px;
+    border: solid 2px rgb(123, 121, 121);
+    background-color: rgb(241, 241, 241);
+    outline: none;
+    box-sizing: border-box; 
+}
+
+/* La Flechita (El botón) */
+.boton_precio {
+    position: absolute; /* Se mueve libremente*/
+    right: 10px;       
+    top: 50%;           
+    transform: translateY(-50%); /* Truco matemático para centrarlo verticalmente perfecto */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+    /* Esto hace que el Aside y los Autos se pongan uno al lado del otro */
+.contenedor-principal {
+    display: flex;
+    align-items: flex-start; /* Alineados arriba */
+    gap: 60px; 
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto; 
+}
+    
+    /*Catalogo*/
+
+    .catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Esto crea 3 columnas de igual tamaño */
+    gap: 40px; /* Esto pone un espacio de 40px entre tarjeta y tarjeta */
+    width: 100%; 
+    max-width: 1200px;
+    margin: 25px 0px 30px 0px; 
+    padding-bottom: 0px; 
+}
+/* La Tarjeta */
+.card_content {
+    background-color: white;
+    width: 100%;
+    min-height: 450px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding-bottom: 20px; 
+}
+.card_content:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* La Imagen */
+.card_img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; /* Recorta la foto sin deformarla */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Títulos y textos  */
+.card_title {
+    margin: 15px 0 5px 20px; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card_subtitle {
+    margin: 0 0 15px 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Lista de detalles */
+.card_details {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+.card_details li {
+    margin-bottom: 5px;
+}
+
+/* Precio */
+.card_precio {
+    display: flex;
+    align-items: center;
+    margin: 15px 0 0 20px;
+    border-top: 1px solid #eee; /* Una rayita arriba del precio*/
+    padding-top: 15px;
+    width: 85%;
+}
+
+.price {
+    font-size: 14px;
+    color: #888;
+    margin-right: 10px;
+}
+
+.plata {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+.columna-derecha{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-boton-vermas{
+    text-align: center; 
+    margin-top: 25px;
+    margin-bottom: 50px; 
+    position: relative; 
+    height: 50px; 
+}
+.boton_vermas{
+    position: relative;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: rgb(26, 25, 25);
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.boton_vermas:hover{
+    background-color: #000000;
+    box-shadow: 0 0 4px rgb(60, 59, 59);
+    padding: 11px 16px;
+}
+
+    /*Footer*/
+
+footer {
+    position: relative; /* se posiciona al fondo */
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    margin-top: 80px; 
+    padding-bottom: 20px;
+    text-align: center; /* Esto centra las columnas automáticamente */
+}
+
+.linea_gris {
+    width: 90%; 
+    height: 1px;
+    background-color: rgb(187, 185, 185);
+    margin: 30px auto; 
+}
+
+.logo_footer {
+    width: 150px; 
+    display: block; 
+    margin: 0 auto 30px auto; 
+}
+
+/* Las Columnas (Autos, Servicios, Nosotros, Contacto) */
+.footer_section {
+    position: static; 
+    display: inline-block; /* cada seccion una al lado de la otra */
+    vertical-align: top; /* Se alinean arriba */
+    width: 20%; 
+    min-width: 200px; 
+    margin: 10px;
+    text-align: left; /* El texto adentro de la columna va a la izquierda */
+}
+
+/* Títulos y Enlaces */
+.title_footer {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.footer_items {
+    color: rgb(82, 82, 82);
+    display: block; 
+    text-decoration: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: normal; 
+}
+
+.footer_items:hover {
+    color: black;
+}
+
+.text_contacto {
+    color: rgb(82, 82, 82);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Copyright */
+.footer_copy {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+    /*VENTANA MODAL*/
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 95%; 
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.modal-img {
+    width: 55%;        
+    height: auto;
+    min-height: 420px; 
+    object-fit: cover; 
+    display: block;
+}
+
+
+.modal-details {
+    width: 45%;       
+    padding: 25px;     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background-color: #fff;
+}
+
+#modal-title {
+    font-size: 24px; 
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #222;
+    line-height: 1.2;
+}
+
+#modal-desc {
+    font-size: 18px;
+    color: #3e3c3c;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+#modal-price {
+    font-size: 32px; 
+    color: #333; 
+    font-weight: 900; 
+    margin-top: 15px;
+    margin-bottom: 25px;
+    letter-spacing: -1px; 
+}
+
+/* Grilla de Íconos  */
+.specs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; 
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.spec-item {
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #555;
+    background-color: #f4f4f4;
+    padding: 5px 10px; 
+    border-radius: 6px;
+}
+
+.spec-item i { color: #3f3f3f; font-size: 14px; }
+
+/* BOTÓN  */
+.modal-boton {
+    background-color: #d32525;
+    color: white;
+    padding: 12px; 
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    margin-top: auto; 
+    box-shadow: 0 4px 6px rgba(37, 211, 102, 0.2);
+}
+
+.modal-boton:hover { background-color: #600404; }
+
+
+/* Cruz de Cerrar */
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #999;
+    background: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+}
+.close-modal:hover { color: #000; transform: rotate(90deg); }
+
+#notificacion-toast {
+    position: fixed;
+    top: -100px; /* Arranca escondido ARRIBA de la pantalla */
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: #db0b0b;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 9000; /* Por encima de TODO, incluso del modal */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    
+    transition: top 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Efecto rebote sutil */
+}
+
+
+#notificacion-toast.mostrar {
+    top: 42px; 
+}
+
+
+/* --- PÁGINA PUBLICAR --- */
+
+.publicar-container {
+    margin-top: 120px; /* Para despegarse del header fijo */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.publicar-container h1 { margin-bottom: 10px; color: #333; }
+.subtitulo-form { color: #666; margin-bottom: 30px; }
+
+.formulario-venta {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fila-form {
+    display: flex;
+    gap: 15px;
+}
+
+/* Inputs del formulario (Reusamos estilo parecido al modal) */
+.formulario-venta input, 
+.formulario-venta textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.formulario-venta input:focus,
+.formulario-venta textarea:focus {
+    border-color: #333;
+}
+
+/* Botón Enviar */
+.boton-enviar {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+.boton-enviar:hover { background-color: #333; }
+
+/* Botón Cancelar */
+.cancelar {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.cancelar:hover { text-decoration: underline; }
+
+/* Responsive para celular: que las filas se hagan columna */
+@media (max-width: 600px) {
+    .fila-form { flex-direction: column; }
+    .publicar-container { width: 90%; padding: 20px; }
+}
+
+
+/* DESIGN (CELULARES Y TABLETS)(< 768px) */
+
+@media (max-width: 768px) {
+
+    /* 1. LAYOUT GENERAL (Filtros arriba, Autos abajo) */
+    .contenedor-principal {
+        flex-direction: column; 
+        width: 95%;
+        gap: 20px;
+        margin: 0 auto;
+    }
+
+    /* 2. HEADER Y MENÚ */
+    .header {
+        flex-direction: column; /* Logo arriba, menú abajo */
+        height: auto; /* Altura automática */
+        padding: 15px;
+        position: relative; /* Dejamos de fijarlo para ganar espacio */
+    }
+
+    .nav_logo img {
+        width: 140px;
+        margin-bottom: 15px;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .item_boton {
+        margin-left: 0;
+        display: block; /* Botón ancho completo */
+    }
+
+    /* 3. HERO (BANNER) */
+    .hero {
+        margin-top: 0; 
+        height: 250px; /* Un poco más bajo en celular */
+    }
+    
+    .hero_content {
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .hero_title { font-size: 24px; }
+    .hero_lorem { font-size: 16px; margin-bottom: 15px; }
+
+    /* 4. BUSCADOR (Centrado y Ancho) */
+    /* --- BUSCADOR MOBILE (Adentro del @media) --- */
+    
+    .barra_busqueda {
+        width: 95%;
+        margin: 20px auto; /* Centrado */
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-wrapper {
+        position: relative; 
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .input_buscador {
+        width: 100%;
+        margin: 0;
+        /* 45px a la izquierda para que el texto no tape a la lupa */
+        padding: 12px 10px 12px 45px; 
+        font-size: 16px;
+    }
+
+    .icon {
+        position: absolute; /* Flota sobre el input */
+        left: 15px;         /* Pegada a la izquierda */
+        top: 50%;           /* A la mitad de altura */
+        transform: translateY(-50%); /* Centrado vertical perfecto */
+        font-size: 18px;
+        color: #666;
+        z-index: 10;
+    }
+
+    /* 5. ASIDE (FILTROS) - Ahora es una tarjeta arriba */
+    .aside_opciones {
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .filtrar, .rango_precio, .select_1 {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Alineamos los inputs de precio para que no se rompan */
+    .precio-item { width: 100%; }
+
+    /* 6. CATÁLOGO (1 sola columna) */
+    .catalogo {
+        grid-template-columns: 1fr; /* 1 columna */
+        gap: 25px;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .columna-derecha { width: 100%; }
+
+    /* 7. VENTANA MODAL (Vertical) */
+    .modal-content {
+        flex-direction: column; /* Foto arriba, Texto abajo */
+        width: 95%;
+        height: auto;           
+        max-height: 90vh;       /* Que entre en la pantalla */
+        overflow-y: auto;       /* Scroll si es muy largo */
+    }
+
+    .modal-img {
+        width: 100%;
+        height: 250px;          /* Altura fija para la foto */
+        min-height: auto;
+    }
+
+    .modal-details {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #modal-title { font-size: 22px; }
+    #modal-price { font-size: 30px; margin-bottom: 15px; }
+    
+    .close-modal {
+        background-color: rgba(255,255,255,0.9);
+        border-radius: 50%;
+        width: 35px; height: 35px;
+        display: flex; justify-content: center; align-items: center;
+        top: 10px; right: 10px;
+    }
+
+    /* 8. PÁGINA PUBLICAR (Formulario vertical) */
+    .fila-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .publicar-container {
+        width: 95%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* 9. FOOTER */
+    .footer_section {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        text-align: center; /* Todo centrado */
+    }
+    
+    .footer_copy { 
+        margin-left: 0; 
+        padding: 0 20px; 
+        text-align: center;
+    }
+}

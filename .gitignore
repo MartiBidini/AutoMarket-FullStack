@@ -1,0 +1,23 @@
+# --- C# y .NET (La basura del Backend) ---
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+*.db
+*.pdb
+
+# --- Visual Studio Code ---
+.vscode/
+# Ignorar carpetas basura de Visual Studio
+.vs/
+[Bb]in/
+[Oo]bj/
+
+# Ignorar archivos de usuario
+*.user
+*.suo
+
+# --- Windows ---
+Thumbs.db
+Desktop.ini

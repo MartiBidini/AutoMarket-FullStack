@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vender mi Auto - AutoMarket</title>
+    <link rel="stylesheet" href="principal.styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="Logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav_logo">
+            <a href="index.html"><img class="Logo" src="AutoMarket.png" alt="AutoMarket Logo"></a>
+        </div>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="pag2index.html" class="item_menu">Volver al Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="publicar-container">
+        <h1>Vendé tu Auto con Nosotros</h1>
+        <p class="subtitulo-form">Dejanos los datos de tu vehículo y un asesor te contactará para coordinar la venta.</p>
+
+        <form id="form-vender" class="formulario-venta">
+            
+            <div class="fila-form">
+                <input type="text" placeholder="Tu Nombre Completo" required>
+                <input type="tel" placeholder="Tu Teléfono (WhatsApp)" required>
+            </div>
+
+            <div class="fila-form">
+                <input type="text" placeholder="Marca (ej: Fiat)" required>
+                <input type="text" placeholder="Modelo (ej: Palio)" required>
+            </div>
+
+            <div class="fila-form">
+                <input type="number" placeholder="Año" required>
+                <input type="number" placeholder="Kilometraje" required>
+            </div>
+
+            <textarea placeholder="Contanos más detalles del auto (estado, papeles, etc)..." rows="4"></textarea>
+
+            <button type="submit" class="boton-enviar">Enviar Solicitud</button>
+            
+            <a href="pag2index.html" class="cancelar">Cancelar</a>
+        </form>
+    </main>
+
+    <footer style="margin-top: 50px; position: relative;">
+        <div class="linea_gris"></div>
+        <p class="footer_copy" style="text-align: center; margin: 20px;">©2025 AutoMarket - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        document.getElementById("form-vender").addEventListener("submit", (e) => {
+            e.preventDefault();
+            // Simulación de éxito
+            alert("¡Solicitud recibida con éxito! Te contactaremos pronto.");
+            window.location.href = "pag2index.html"; // Volver al inicio
+        });
+    </script>
+</body>
+</html>

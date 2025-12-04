@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMarket</title>
+    <link rel="stylesheet" href="principal.styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon"href="Logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+    <div class="nav_logo">
+        <img class="Logo" src="AutoMarket.png" alt="AutoMarket Logo">
+    </div>
+    <nav class="nav">
+    <ul class="nav_list">
+    <li class="nav_item"><a href="#inicio" class="item_menu">Inicio</a></li>
+    <li class="nav_item"><a href="#catalogo" class="item_menu">Catalogo</a></li>
+    <li class="nav_item"><a href="#contacto"class="item_menu">Contacto</a></li>
+    <a href="publicar.html" class="item_boton">Publicar Auto</a>
+    </ul>
+    </nav>
+    </header>
+        <div class="hero" id="inicio">
+            <img class="banner" src="banner2.jpg" alt="">
+            <div class="overplay_hero"></div>
+            <div class="hero_content">
+    <h1 class="hero_title">Tu proximo auto te espera en AutoMarket</h1>
+    <h3 class="hero_lorem">Explora las mejores opciones, precios únicos y la confianza que buscás</h3>
+    <a href="#catalogo" class="boton_hero" id="btnHero">Ir al Catálogo</a>
+    </div>
+        </div>
+        <h1 class="main_title" id="catalogo">Encontrá tu próximo auto en nuestro catálogo</h1>
+        <div class="barra_busqueda"> 
+            <i class="fa-solid fa-magnifying-glass icon" id="btnSearch"></i>
+        <input  class="input_buscador" id="txtSearch" type="text" placeholder="Escribi la marca,modelo o version del auto"></div>
+        
+        <div class="contenedor-principal">
+
+        <aside class="aside_opciones">
+            <h3 class="text_ordenar">Ordenar por</h3>
+            <select class="select_1" id="select_1">
+    <option class="opciones" value="precio_asc">Menor Precio</option>
+    <option class="opciones" value="precio_desc">Mayor Precio</option>
+    <option class="opciones" value="km_asc">Menor kilometraje</option>
+    <option class="opciones" value="km_desc">Mayor kilometraje</option>
+    <option class="opciones" value="anio_desc">Más Nuevos (Año)</option>
+    <option class="opciones" value="anio_asc">Más Viejos (Año)</option>
+    </select> 
+            <div class="filtrar">
+    <h3 class="h3_marcas">Marcas</h3>
+    
+    <label><input type="radio" name="marca" value="Todas" checked> Todas (18)</label>
+    <label><input type="radio" name="marca" value="Fiat"> Fiat (5)</label>
+    <label><input type="radio" name="marca" value="Volkswagen"> Volkswagen (3)</label>
+    <label><input type="radio" name="marca" value="Renault"> Renault (3)</label>
+    <label><input type="radio" name="marca" value="Toyota"> Toyota (2)</label>
+    <label><input type="radio" name="marca" value="Nissan"> Nissan (2)</label>
+
+    <div id="marcas-extra" style="display: none;">
+        <label><input type="radio" name="marca" value="Ford"> Ford (1)</label>
+        <label><input type="radio" name="marca" value="Peugeot"> Peugeot (1)</label>
+        <label><input type="radio" name="marca" value="Mercedes Benz"> Mercedes Benz (1)</label>
+    </div>
+</div>
+
+    <div class="ver_todo" id="btnVerMarcas">Ver Todo</div>
+    <div class="rango_precio">
+    <h3 class="title_precio">Precio</h3>
+    <form>
+        <div class="precio-item">
+            <input class="input_precio" id="inpMin" type="number" placeholder="Mínimo 5.700">
+            <button class="boton_precio" id="btnMin" type="submit">➤</button>
+        </div>
+
+        <div class="precio-item">
+            <input class="input_precio" id="inpMax" type="number" placeholder="Máximo 118.700">
+            <button class="boton_precio" id="btnMax" type="submit">➤</button>
+        </div>
+    </form>
+</div>
+        </aside>
+        <div class="columna-derecha">
+        <main class="catalogo" id="contenedor-autos">
+            </main>
+        <div class="contenedor-boton-vermas">
+            <a href="#" class="boton_vermas">Ver Más Autos</a>
+        </div>
+    </div>
+        </div>
+    <footer id="contacto">
+    <div class="linea_gris"></div>
+    <img class="logo_footer" src="logo_negro_fuerte.png" alt="Logofooter">
+    <div class="footer_section">
+        <h2 class="title_footer">Autos</h2>
+        <h5 class="footer_items">Automarket Usados</h5>
+        <h5 class="footer_items">Automarket Empresas</h5>
+    </div>
+    <div class="footer_section servicios">
+        <h2 class="title_footer">Servicios</h2>
+        <h5 class="footer_items">Planes de ahorro</h5>
+        <h5 class="footer_items">Post Venta</h5>
+    </div>
+    <div class="footer_section nosotros">
+        <h2 class="title_footer">AutoMarket</h2>
+        <h5 class="footer_items">Nosotros</h5>
+        <h5 class="footer_items">Novedades</h5>
+    </div>
+    <div class="footer_section contacto">
+        <i class="fas fa-phone llamar"></i> 0810 762 4000
+        <h5 class="text_contacto">Córdoba: Lunes a Sabado de 8:30 a 19:30 hs</h5>
+    </div>
+    <div class="linea_gris segunda"></div>
+    <p class="footer_copy">©2025 automarket.com.ar Todos los derechos reservados Términos y Condiciones | Política de calidad Autocity Usados | Legales</p>
+    </footer>
+    <div class="modal-overlay" id="modaloverlay">
+    <div class="modal-content">
+        <span class="close-modal">&times; </span>
+        <img src="" alt="Auto" id="modal-img">
+    <div class="modal-details">
+    <h2 id="modal-title"></h2>
+    <div id="modal-specs" class="specs-grid"></div>
+    <p id="modal-desc" class="desc-text"></p>
+    <h3 id="modal-price"></h3>
+    <button class="modal-boton">Lo Quiero!!</button>
+    </div>
+    </div> 
+    </div> 
+    <div id="notificacion-toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>¡Consulta enviada con éxito!</span>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
