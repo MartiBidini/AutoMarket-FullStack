@@ -4,27 +4,26 @@
 
 ---
 
-## 📸 Capturas de Pantalla
+## Capturas de pantalla:
 
-| Catálogo Principal | Detalle de Vehículo (Modal) |
-|:---:|:---:|
-| ![Catalogo](ruta/a/tu/imagen_catalogo.png) | ![Modal](ruta/a/tu/imagen_modal.png) |
-| *Vista general con filtros y buscador* | *Vista de detalle con especificaciones* |
+<img width="1918" height="907" alt="image" src="https://github.com/user-attachments/assets/aca85c8f-b7ef-499f-bf43-bcf46da38bb1" />
 
-> *Nota: Reemplaza `ruta/a/tu/imagen...` con los links de tus fotos subidas.*
+<img width="1900" height="907" alt="image" src="https://github.com/user-attachments/assets/60c6e3e6-6a14-46b9-84ba-6d5b98f1a078" />
+
+<img width="1893" height="911" alt="image" src="https://github.com/user-attachments/assets/877e120a-fa3f-47da-bcfe-24060fc69dcf" />
+
+<img width="1900" height="915" alt="image" src="https://github.com/user-attachments/assets/d1e54e8a-7821-4a5d-b843-3bf0b939bf4b" />
 
 ---
 
-## ✨ Funcionalidades Principales
+## Funcionalidades Principales
 
-Este sistema reemplaza los catálogos estáticos por una experiencia 100% dinámica:
-
-* **🔎 Buscador Inteligente:** Filtrado en tiempo real por marca o modelo.
-* **🎚️ Filtros Avanzados:** Búsqueda por rango de precios (Mín/Máx), categorías y ordenamiento.
-* **⚡ Carga Dinámica:** El catálogo se alimenta desde una base de datos SQL, permitiendo actualizaciones instantáneas de precio y stock.
-* **📱 100% Responsive:** Diseño adaptado a celulares (Mobile First) y escritorio.
-* **🖼️ Ventana Modal:** Visualización rápida de detalles técnicos sin recargar la página.
-* **📩 Módulo de Contacto:** Formulario para publicar vehículos y sistema de notificaciones visuales.
+* ** Buscador Inteligente:** Filtrado en tiempo real por marca o modelo.
+* ** Filtros Avanzados:** Búsqueda por rango de precios (Mín/Máx), categorías y ordenamiento.
+* ** Carga Dinámica:** El catálogo se alimenta desde una base de datos SQL, permitiendo actualizaciones instantáneas de precio y stock.
+* ** 100% Responsive:** Diseño adaptado a celulares (Mobile First) y escritorio.
+* ** Ventana Modal:** Visualización rápida de detalles técnicos sin recargar la página.
+* ** Módulo de Contacto:** Formulario para publicar vehículos y sistema de notificaciones visuales.
 
 ---
 
@@ -32,7 +31,7 @@ Este sistema reemplaza los catálogos estáticos por una experiencia 100% dinám
 
 El proyecto utiliza una arquitectura profesional de **3 Capas**:
 
-* **Frontend:** HTML5, CSS3 (Grid/Flexbox), JavaScript Vanilla.
+* **Frontend:** HTML5, CSS3 (Grid/Flexbox), JavaScript .
 * **Backend:** C# .NET 8 (ASP.NET Core Web API).
 * **Base de Datos:** SQL Server Express.
 * **ORM:** Entity Framework Core.
@@ -54,12 +53,7 @@ Sigue estos pasos para correr el sistema en tu computadora:
 
 ### 3. Frontend
 * Abre la carpeta `Frontend` con **VS Code**.
-* Abre el archivo `index.html` en tu navegador.
+* Abre el archivo `login.html` en tu navegador.
 * ¡Listo! La web se conectará automáticamente a tu API local.
 
 ---
-
-### 👤 Autor
-
-**Martiniano Bidini** Estudiante de Ingeniería de Software | Desarrollador .NET Trainee  
-[LinkedIn](Tu_Link_De_LinkedIn)
