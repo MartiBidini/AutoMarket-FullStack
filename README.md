@@ -1,6 +1,6 @@
 # 🚗 AutoMarket - Plataforma de Vehículos Full Stack
 
-**AutoMarket** es una aplicación web moderna para la gestión y visualización de un catálogo de vehículos en tiempo real. Conecta un Frontend dinámico con una API .NET y una base de datos SQL Server.
+**AutoMarket** es una pagina web moderna para la gestión y visualización de un catálogo de vehículos en tiempo real. Conecta un Frontend dinámico con una API .NET y una base de datos SQL Server.
 
 ---
 
