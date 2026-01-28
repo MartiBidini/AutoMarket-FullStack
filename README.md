@@ -10,7 +10,11 @@
 
 <img width="1900" height="907" alt="image" src="https://github.com/user-attachments/assets/60c6e3e6-6a14-46b9-84ba-6d5b98f1a078" />
 
+<img width="1901" height="915" alt="foto publciar" src="https://github.com/user-attachments/assets/3ecac76f-5d91-40ae-b185-93a661e4aa89" />
+
 <img width="1893" height="911" alt="image" src="https://github.com/user-attachments/assets/877e120a-fa3f-47da-bcfe-24060fc69dcf" />
+
+<img width="1915" height="907" alt="modal auto" src="https://github.com/user-attachments/assets/d8092427-248f-4aee-b55c-166e5b678adc" />
 
 <img width="1900" height="915" alt="image" src="https://github.com/user-attachments/assets/d1e54e8a-7821-4a5d-b843-3bf0b939bf4b" />
 
